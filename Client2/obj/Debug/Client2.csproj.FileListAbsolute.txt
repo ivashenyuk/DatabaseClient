@@ -1,0 +1,10 @@
+c:\users\yurai\source\repos\Client2\Client2\bin\Debug\Client2.exe.config
+c:\users\yurai\source\repos\Client2\Client2\bin\Debug\Client2.exe
+c:\users\yurai\source\repos\Client2\Client2\bin\Debug\Client2.pdb
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.csprojResolveAssemblyReference.cache
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.Form1.resources
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.Properties.Resources.resources
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.csproj.GenerateResource.Cache
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.csproj.CoreCompileInputs.cache
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.exe
+c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.pdb
