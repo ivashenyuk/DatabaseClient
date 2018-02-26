@@ -8,3 +8,5 @@ c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.csproj.GenerateRes
 c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.csproj.CoreCompileInputs.cache
 c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.exe
 c:\users\yurai\source\repos\Client2\Client2\obj\Debug\Client2.pdb
+C:\Users\yurai\source\repos\Client2\Client2\bin\Debug\components.dll
+C:\Users\yurai\source\repos\Client2\Client2\bin\Debug\components.pdb
