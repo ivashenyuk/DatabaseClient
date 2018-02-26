@@ -37,13 +37,13 @@ namespace Client2
                 this.factory = new ChannelFactory<IUsers>(this.binding, this.endpoint);
                 this.channel = this.factory.CreateChannel();
                 this.SetValues();
-            
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Connecting to server failed.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -61,6 +61,56 @@ namespace Client2
                     this.dataTableUsers.Rows.Add(user.Id, user.Name, user.Lastname, user.Birthday);
                 }
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            this.dataTableUsers.Rows.Clear();
+            SetValues();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (this.channel != null)
+            {
+                User user = CreateUser();
+                if (user != null)
+                {
+                    this.channel.AddUser(user);
+                    btnUpdate_Click(sender, e);
+                }
+
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (this.channel != null)
+            {
+                User user = CreateUser();
+                if (user != null)
+                {
+                    this.channel.EditUser(user);
+                    btnUpdate_Click(sender, e);
+                }
+
+            }
+        }
+        private User CreateUser()
+        {
+            if (this.inputId.Text != "" &&
+                      this.inputName.Text != "" &&
+                      this.inputLastname.Text != "" &&
+                      this.inputBirthday.Text != "")
+            {
+                return new User(
+                    Convert.ToInt32(this.inputId.Text),
+                    Convert.ToString(this.inputName.Text),
+                    Convert.ToString(this.inputLastname.Text),
+                    Convert.ToDateTime(this.inputBirthday.Text)
+                      );
+            }
+            return null;
         }
     }
 }

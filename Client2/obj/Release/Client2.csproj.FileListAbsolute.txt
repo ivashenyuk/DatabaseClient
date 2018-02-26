@@ -1,0 +1,11 @@
+C:\Users\yurai\source\repos\Client2\Client2\bin\Release\Client2.exe.config
+C:\Users\yurai\source\repos\Client2\Client2\bin\Release\Client2.exe
+C:\Users\yurai\source\repos\Client2\Client2\bin\Release\Client2.pdb
+C:\Users\yurai\source\repos\Client2\Client2\bin\Release\components.dll
+C:\Users\yurai\source\repos\Client2\Client2\bin\Release\components.pdb
+C:\Users\yurai\source\repos\Client2\Client2\obj\Release\Client2.Form1.resources
+C:\Users\yurai\source\repos\Client2\Client2\obj\Release\Client2.Properties.Resources.resources
+C:\Users\yurai\source\repos\Client2\Client2\obj\Release\Client2.csproj.GenerateResource.Cache
+C:\Users\yurai\source\repos\Client2\Client2\obj\Release\Client2.csproj.CoreCompileInputs.cache
+C:\Users\yurai\source\repos\Client2\Client2\obj\Release\Client2.exe
+C:\Users\yurai\source\repos\Client2\Client2\obj\Release\Client2.pdb

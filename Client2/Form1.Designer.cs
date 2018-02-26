@@ -35,14 +35,14 @@
             this.Lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inputName = new System.Windows.Forms.TextBox();
+            this.inputBirthday = new System.Windows.Forms.TextBox();
+            this.inputLastname = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.inputId = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableUsers)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,36 +119,36 @@
             this.panel1.Size = new System.Drawing.Size(968, 441);
             this.panel1.TabIndex = 1;
             // 
-            // textBox1
+            // inputName
             // 
-            this.textBox1.Location = new System.Drawing.Point(76, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 20);
-            this.textBox1.TabIndex = 2;
+            this.inputName.Location = new System.Drawing.Point(76, 6);
+            this.inputName.Name = "inputName";
+            this.inputName.Size = new System.Drawing.Size(279, 20);
+            this.inputName.TabIndex = 2;
             // 
-            // textBox2
+            // inputBirthday
             // 
-            this.textBox2.Location = new System.Drawing.Point(676, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 20);
-            this.textBox2.TabIndex = 3;
+            this.inputBirthday.Location = new System.Drawing.Point(676, 6);
+            this.inputBirthday.Name = "inputBirthday";
+            this.inputBirthday.Size = new System.Drawing.Size(289, 20);
+            this.inputBirthday.TabIndex = 3;
             // 
-            // textBox3
+            // inputLastname
             // 
-            this.textBox3.Location = new System.Drawing.Point(361, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(309, 20);
-            this.textBox3.TabIndex = 4;
+            this.inputLastname.Location = new System.Drawing.Point(361, 6);
+            this.inputLastname.Name = "inputLastname";
+            this.inputLastname.Size = new System.Drawing.Size(309, 20);
+            this.inputLastname.TabIndex = 4;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.btnSave);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.inputId);
+            this.panel2.Controls.Add(this.btnUpdate);
+            this.panel2.Controls.Add(this.inputName);
+            this.panel2.Controls.Add(this.inputLastname);
+            this.panel2.Controls.Add(this.inputBirthday);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 441);
             this.panel2.Name = "panel2";
@@ -163,6 +163,7 @@
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
@@ -172,22 +173,25 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // textBox4
+            // inputId
             // 
-            this.textBox4.Location = new System.Drawing.Point(3, 6);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(67, 20);
-            this.textBox4.TabIndex = 6;
+            this.inputId.Location = new System.Drawing.Point(3, 6);
+            this.inputId.Name = "inputId";
+            this.inputId.Size = new System.Drawing.Size(67, 20);
+            this.inputId.TabIndex = 6;
+            this.inputId.Text = "0";
             // 
-            // btnSave
+            // btnUpdate
             // 
-            this.btnSave.Location = new System.Drawing.Point(868, 32);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(97, 23);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(868, 32);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(97, 23);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Form1
             // 
@@ -217,14 +221,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Birthday;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox inputName;
+        private System.Windows.Forms.TextBox inputBirthday;
+        private System.Windows.Forms.TextBox inputLastname;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox inputId;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 
